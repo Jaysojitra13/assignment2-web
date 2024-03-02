@@ -1,0 +1,23 @@
+<h1>All Products</h1>
+<table>
+  <thead>
+    <tr>
+      <th>asin</th>
+      <th>title</th>
+      <th>stars</th>
+      <th>reviews</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each data}}
+      {{#if reviews}}
+        <tr>
+          <td>{{this.asin}}</td>
+          <td>{{this.title}}</td>
+          <td>{{this.stars}}</td>
+          <td>{{this.reviews}}</td>
+        </tr>
+      {{/if}}
+    {{/each}}
+  </tbody>
+</table>
